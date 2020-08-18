@@ -101,6 +101,10 @@
   height: 100px;
 }
 
+.marketing-segment {
+  padding: 0 3% 8% 3%;
+}
+
 @media only screen and (max-width: 990px) {
   .logo {
     top: 15px;
@@ -109,4 +113,81 @@
   .icons-bar {
     display: none !important;
   }
+}
+
+.hexagon-segment {
+  margin-left: 38%;
+  position: relative;
+  width: 150px;
+  height: 86.60px;
+  background-color: #43A047;
+}
+
+.hexagon-segment:before,
+.hexagon-segment:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+}
+
+.hexagon-segment:before {
+  bottom: 100%;
+  border-bottom: 43.30px solid #43A047;
+}
+
+.hexagon-segment:after {
+  top: 100%;
+  width: 0;
+  border-top: 43.30px solid #43A047;
+}
+
+.icon-color-segment {
+  color: #fff;
+  margin-right: 85px;
+  margin-top: 12px;
+}
+
+.fa-laptop:before {
+  margin-left: 40px;
+}
+
+.black-hexagon > .hexagon-segment {
+  background-color: #212529 !important;
+}
+.black-hexagon > .hexagon-segment:before {
+  border-bottom-color: #212529 !important;
+}
+.black-hexagon > .hexagon-segment:after{
+  border-top-color: #212529 !important;
+}
+
+.red-hexagon > .hexagon-segment {
+  background-color: #F4511E !important;
+}
+.red-hexagon > .hexagon-segment:before {
+  border-bottom-color: #F4511E !important;
+}
+.red-hexagon > .hexagon-segment:after{
+  border-top-color: #F4511E !important;
+}
+
+.segment-content {
+  text-align: center;
+  margin-top: 69px;
+
+  p {
+    color: #BDBDBD;
+  }
+
+  h4 {
+    font-weight: 700;
+  }
+}
+
+.segment-title {
+  color: #BDBDBD;
+  transform: scale(1, 1.2);
+  padding-bottom:65px;
 }
