@@ -1,0 +1,112 @@
+.icon-background {
+  color: darkslategrey;
+}
+
+.icon-color {
+  color: #212529;
+}
+
+.icons-bar {
+  margin-right: 50px;
+}
+
+.fa-stack-1x {
+  top: 7px;
+}
+
+.hexagon {
+  position: relative;
+  width: 74px;
+  height: 45px;
+  background-color: #212529;
+  margin: 18.5px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 37px solid transparent;
+  border-right: 37px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 18.5px solid #212529;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 18.5px solid #212529;
+}
+
+.logo {
+  position: absolute;
+  left: 45%;
+  top: 43px;
+  width: 11%;
+  height: auto;
+  z-index: 2;
+}
+
+.company-segment {
+  color: white;
+  padding: 7%;
+  background-color: darkred;
+  position: relative;
+  z-index: 1;
+}
+
+.first-content {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.second-content {
+  font-size: 32px;
+  padding: 40px 0 60px 0;
+  text-shadow: 0px 3px 2px black;
+  font-size: 38px;
+  font-weight: 500;
+  color: lightgrey;
+  white-space: pre-line;
+  transform: scale(1, 1.4);
+}
+
+.third-content {
+  text-align: left;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.info-button {
+  margin-top: 2%;
+  background-color: #43A047;
+  box-shadow: 0px 5px 11px black;
+  font-size: 14px;
+  padding: 10px 22px;
+  font-weight: 400;
+}
+
+.triangle {
+  transform: rotate(45deg);
+  position: relative;
+  left: 47.5%;
+  top: -88px;
+  background-color: darkred;
+  width: 100px;
+  height: 100px;
+}
+
+@media only screen and (max-width: 990px) {
+  .logo {
+    top: 15px;
+  }
+
+  .icons-bar {
+    display: none !important;
+  }
+}
