@@ -62,10 +62,16 @@ export class AppComponent {
       return;
     }
     this.messageList.push(this.guestForm.value);
+    this.submitted = false;
+
+    this.guestForm.markAsPristine();
+    this.guestForm.markAsUntouched();
+    this.guestForm.reset();
+
   }
 
   scrollHome() {
-    window.scroll(0,0);
+    window.scroll(0, 0);
   }
 
   scrollSegment() {
