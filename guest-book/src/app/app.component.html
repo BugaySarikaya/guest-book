@@ -1,4 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- Menu Part-->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <button (click)="toggle()" class="navbar-toggler" type="button" data-toggle="collapse"
     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
     aria-label="Toggle navigation">
@@ -8,56 +10,17 @@
   <div class="collapse navbar-collapse" #navbarSupportedContent id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link p-4" href="#">HOME <span class="sr-only">(current)</span></a>
+        <a class="nav-link p-4" (click)="scrollHome()" >HOME <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link p-4" href="#">SEGMENT</a>
+        <a class="nav-link p-4" (click)="scrollSegment()">SEGMENT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link p-4" href="#">GUEST BOOK</a>
+        <a class="nav-link p-4" (click)="scrollGuestbook()">GUEST BOOK</a>
       </li>
     </ul>
 
     <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex icons-bar">
-      <!-- <li class="nav-item">
-        <a href="#" class="nav-link p-4">
-          <i class="fa fa-facebook fa-1x circle-icon" aria-hidden="true"> </i>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#" class="nav-link p-4">
-          <i class="fa fa-twitter fa-1x circle-icon" aria-hidden="true"> </i>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#" class="nav-link p-4">
-          <i class="fa fa-google-plus fa-1x circle-icon" aria-hidden="true"> </i>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#" class="nav-link p-4">
-          <i class="fa fa-linkedin fa-1x circle-icon" aria-hidden="true"> </i>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#" class="nav-link p-4">
-          <i class="fa fa-github fa-1x circle-icon" aria-hidden="true"> </i>
-        </a>
-      </li> -->
-      <!--
-      <a href="#" class="nav-link p-2">
-        <div class="hexagon">
-          <span class="fa-stack fa-1x">
-            <i class="fa fa-circle fa-stack-2x icon-background"></i>
-            <i class="fa fa-twitter fa-stack-1x"></i>
-          </span>
-        </div>
-      </a> -->
-
       <li class="nav-item">
         <a href="#" class="nav-link p-2">
           <div class="hexagon">
@@ -110,8 +73,12 @@
 
 <img #logo class="logo" src="../assets/logos/pragmanila-logo.png" alt="pragmanila-logo">
 
+<!-- -->
+
+<!-- Segment Part-->
+
 <div class="company-segment text-center">
-  <div class="first-content">
+  <div #segmentPart class="first-content">
     {{firstContent | uppercase}}
   </div>
 
@@ -134,6 +101,7 @@
   </div>
 
   <div class="row">
+
     <div class="col-md-4">
       <div class="hexagon-segment">
         <i class="fa fa-laptop fa-4x icon-color-segment"></i>
@@ -144,6 +112,7 @@
         <p>Section below should have more emphasis on hover.list below can be highlighted individually as well.</p>
       </div>
     </div>
+
     <div class="col-md-4">
       <div class="black-hexagon">
         <div class="hexagon-segment">
@@ -156,6 +125,7 @@
         </div>
       </div>
     </div>
+
     <div class="col-md-4">
       <div class="red-hexagon">
         <div class="hexagon-segment">
@@ -170,3 +140,172 @@
     </div>
   </div>
 </div>
+
+<div class="triangle-up"></div>
+
+<div class="marketing-info-segment">
+  <div class="row info-list">
+    <div class="col-md-4">
+      <ul class="list-group actived-list" id="first-list">
+        <li class="list-group-item first-list-element">
+          <i class="fa fa-check fa-1x" aria-hidden="true"> </i>
+          WEB DESIGN
+        </li>
+        <li class="list-group-item">
+          <i class="fa fa-check fa-1x" aria-hidden="true"> </i>
+          UI DESIGN
+        </li>
+        <li class="list-group-item">
+          <i class="fa fa-check fa-1x" aria-hidden="true"> </i>
+          GRAPHIC DESIGN
+        </li>
+        <li class="list-group-item">
+          <i class="fa fa-check fa-1x" aria-hidden="true"> </i>
+          BRANDING
+        </li>
+        <li class="list-group-item">
+          <i class="fa fa-check fa-1x" aria-hidden="true"> </i>
+          CORPORATE IDENTITY
+        </li>
+        <li class="list-group-item">
+          <i class="fa fa-check fa-1x" aria-hidden="true"> </i>
+          MOBILE APP DESIGN
+        </li>
+        <li class="list-group-item" style="margin-bottom: 30px;">
+          <i class="fa fa-check fa-1x" aria-hidden="true"> </i>
+          POSTER DESIGN
+        </li>
+
+        <div class="text-center mb-4 align-self-end" style="margin-top: auto; margin-right: 40%;">
+          <button type="button" class="btn btn-success btn-md list-button" style="color: black;">BUTTON</button>
+        </div>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul class="list-group disabled-list" id="second-list">
+        <li class="list-group-item first-list-element">
+          <div class="d-flex w-100 justify-content-between">
+            <h6 class="mb-1">
+              <i class="fa fa-check fa-1x" aria-hidden="true"> </i>
+              MARKETING TITLE
+            </h6>
+          </div>
+          <p class="mb-1">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          </p>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex w-100 justify-content-between">
+            <h6 class="mb-1">
+              <i class="fa fa-check fa-1x" aria-hidden="true"> </i>
+              MARKETING TITLE
+            </h6>
+          </div>
+          <p class="mb-1">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          </p>
+        </li>
+        <li class="list-group-item" style="margin-bottom: 30px;">
+          <div class="d-flex w-100 justify-content-between">
+            <h6 class="mb-1">
+              <i class="fa fa-check fa-1x" aria-hidden="true"> </i>
+              MARKETING TITLE
+            </h6>
+          </div>
+          <p class="mb-1">Duis aute irure dolor in
+          </p>
+        </li>
+
+        <div class="text-center mb-4 align-self-end" style="margin-top: auto; margin-right: 40%;">
+          <button type="button" class="btn btn-secondary btn-md disabled list-button">BUTTON</button>
+        </div>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul class="list-group disabled-list" id="third-list">
+        <li class="list-group-item first-list-element">
+          <div class="d-flex w-100 justify-content-between">
+            <h6 class="mb-1">
+              <i class="fa fa-check fa-1x" aria-hidden="true"> </i>
+              MARKETING TITLE
+            </h6>
+          </div>
+        </li>
+        <li class="list-group-item" style="margin-bottom: 30px;">
+          <div class="d-flex w-100 justify-content-between">
+            <h6 class="mb-1">
+              <i class="fa fa-check fa-1x" aria-hidden="true"> </i>
+              MARKETING TITLE
+            </h6>
+          </div>
+        </li>
+
+        <div class="text-center mb-4 align-self-end" style="margin-top: auto; margin-right: 40%;">
+          <button type="button" class="btn btn-success btn-md disabled list-button"
+            style="color: black;">BUTTON</button>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- -->
+
+<!-- Guest Book Part-->
+
+<div class="form-segment" #guestBookPart>
+
+  <div class="text-center form-segment-title">
+    <h1>GUEST BOOK</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6" style="padding: 24px; background-color: black;">
+      <form class="text-center" [formGroup]="guestForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <input type="text" class="form-control" formControlName="name" id="name" placeholder="Name"
+            [ngClass]="{ 'is-invalid': submitted && f.name.errors }">
+          <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+            <div *ngIf="f.name.errors.required">Name is required</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" formControlName="subject" id="subject" placeholder="Subject"
+            [ngClass]="{ 'is-invalid': submitted && f.subject.errors }">
+          <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
+            <div *ngIf="f.subject.errors.required">Subject is required</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-control" rows="5" formControlName="message" id="message" placeholder="Message"
+            [ngClass]="{ 'is-invalid': submitted && f.message.errors }">
+          </textarea>
+          <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+            <div *ngIf="f.message.errors.required">Message is required</div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-success btn-md send-button" style="color: black;">SEND</button>
+      </form>
+    </div>
+
+    <div class="col-md-6">
+      <ul class="list-group" style="padding: 24px; background-color: black; max-height: 490px; overflow-y: scroll;">
+        <li class="list-group-item" *ngFor="let message of messageList">
+          <div>
+            <h6 style="float:left;">{{message.name}}</h6>
+          </div>
+          <div>
+            <span style="float: right;">{{message.date | date:'short'}}</span>
+          </div>
+          <br>
+          <div style="float: left;">
+            <p>{{message.message}}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- -->
